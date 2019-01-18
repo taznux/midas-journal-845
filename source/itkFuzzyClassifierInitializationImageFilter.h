@@ -106,7 +106,7 @@ class ITK_EXPORT FuzzyClassifierInitializationImageFilter :
                TInputImage,
                VectorImage<
                    TProbabilityPrecision,
-                   ::itk::GetImageDimension< TInputImage >::ImageDimension > >
+                   TInputImage::ImageDimension > >
 {
 
 public:

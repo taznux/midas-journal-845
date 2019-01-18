@@ -80,8 +80,7 @@ class ITK_EXPORT FuzzyClassifierImageFilter :
     public ImageToImageFilter<
                TInputVectorImage,
                Image< TLabel,
-                      ::itk::GetImageDimension<
-                          TInputVectorImage >::ImageDimension > >
+                      TInputVectorImage::ImageDimension > >
 {
 
 public:
